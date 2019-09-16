@@ -12,12 +12,9 @@ ul {
     width: 20vw;
 }
 
-/* .hamburger, .side-menu {
+.hamburger, .side-menu {
     display: none;
-} */
-/* .hidden-by-default {
-    display: none;
-} */
+}
 
 div.side-menu, .side-menu-open, .side-menu-close  {
     width:50vw;
@@ -30,12 +27,14 @@ div.side-menu, .side-menu-open, .side-menu-close  {
     transform: translateX(-610px);
 }
 .side-menu-open {
+    display: block;
     animation-name: open;
     animation-duration: .6s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
 .side-menu-close {
+    display: block;
     animation: close .6s forwards linear ;
 }
 @keyframes open {
